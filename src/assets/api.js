@@ -2,7 +2,7 @@ import axios from "axios";
 
 const api = axios.create({
 baseURL: import.meta.env.DEV
-  ? "http://localhost:8080/api"
+  ? "https://employeehub-frontend-xt0h.onrender.com"
   : "/api",
   headers: { "Content-Type": "application/json" },
 });
