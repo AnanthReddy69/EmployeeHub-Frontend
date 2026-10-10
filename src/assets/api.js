@@ -1,8 +1,9 @@
 import axios from "axios";
 
 const api = axios.create({
-baseURL: import.meta.env.DEV
-  ? "https://employeehub-backend-i6a7.onrender.com"
+    baseURL: import.meta.env.DEV
+  ? "http://localhost:8080/api"
+  : "https://employeehub-backend-i6a7.onrender.com/api",
   : "/api",
   headers: { "Content-Type": "application/json" },
 });
