@@ -2,7 +2,7 @@ import axios from "axios";
 
 const api = axios.create({
 baseURL: import.meta.env.DEV
-  ? "https://employeehub-frontend-xt0h.onrender.com"
+  ? "https://employeehub-backend-i6a7.onrender.com"
   : "/api",
   headers: { "Content-Type": "application/json" },
 });
